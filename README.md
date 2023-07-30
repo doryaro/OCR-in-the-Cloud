@@ -1,21 +1,15 @@
-Assignment1:
+# OCR in the Cloud:
 
-STUDENT 1 ID: 208463158
-STUDENT 2 ID: 316083542
-
-
-
-
-How to run:
+## How to run:
 First you need to create the jar file with dependencies.(the manager and worker jar files are already uploaded to S3)
 It can be done easly using intellij. open the project in intellij, and click on the 'Maven' bar to the left. Then choose 'lifecycle' and click on: 'package'.
 It will create jar file with dependencies which yuo neet to run using the following command:
 Java -jar jarFileName.jar inputfile.txt outputfile.txt n terminate
-Where 'n' is the  number of URLs per Worker and 'terminate' is optional.
+Where 'n' is the number of URLs per Worker and 'terminate' is optional.
 Terminate is either "terminate" or every other string – where terminate means finish all tasks and terminate the project and every other string means do the work and wait for other Local Applications.  
 In this Project we use ami-0b0dcb5067f052a63 with the type T2-MICRO .
 
-How the program works:
+# How the program works:
 
 We run the command: 
 Java -jar jarFileName.jar inputfile.txt outputfile.txt 5 terminate
