@@ -1,5 +1,6 @@
 # OCR in the Cloud:
-
+About
+application that use OCR algorithms on images, upload the extracted texts to S3, and generate an output HTML file.
 ## How to run:
 First you need to create the jar file with dependencies.(the manager and worker jar files are already uploaded to S3)
 It can be done easly using intellij. open the project in intellij, and click on the 'Maven' bar to the left. Then choose 'lifecycle' and click on: 'package'.
